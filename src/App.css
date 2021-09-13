@@ -1,0 +1,123 @@
+/* Other rules */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg-input: #fcf9f9;
+  --blue: #574dcc;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 1220px;
+  margin: 50px auto 0;
+}
+
+/* Titles */
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Form */
+form {
+  width: calc(100% / 3);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+input,
+#edit {
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  border-style: none;
+  border-radius: 5px;
+  border: 1px solid #54545452;
+  padding: 15px 5px 15px 5px;
+  background-color: var(--color-bg-input);
+}
+
+input::placeholder {
+  color: #54545488;
+}
+
+input[type="submit"],
+#edit {
+  border-style: none;
+  background-color: var(--blue);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover,
+#edit:hover {
+  background-color: #574dccd7;
+}
+
+input[type="submit"]:active,
+#edit:active {
+  background-color: #574dcc86;
+  /* transform: translateY(10px); */
+}
+
+.errorInput {
+  border-color: #ff0200;
+  background-color: #ffe4e4;
+}
+
+.invalid-feedback {
+  color: #ff0200;
+  margin-top: 10px;
+}
+
+/* StepTwo */
+.stepTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepTwo .content {
+  padding: 50px 60px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: rgb(240, 240, 240);
+  color: #000;
+}
+
+.stepTwo p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.stepTwo p span {
+  font-weight: 700;
+}
